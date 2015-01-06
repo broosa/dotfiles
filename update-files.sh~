@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Takes files as specified in versioned-files database and copies them to github repository location
+
+for file in `cat versioned-files`; do
+
+    echo "Updating file '$file'..."
+    cp -r ~/file .
+
+done
+
+echo "Finished. Updated `wc -l versioned-files` from home directory."
+
+
